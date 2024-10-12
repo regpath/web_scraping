@@ -4,20 +4,28 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+
 import time
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
+
 # 웹 드라이버를 설정합니다
 driver = webdriver.Chrome (ChromeDriverManager().install())
+
 # 웹 페이지를 열고 자바스크립트 함수를 실행합니다
 driver.get (" https://mc.skhystec.com/V3/ ")
+
 # 자바스크립트 함수를 실행합니다
 driver.execute_script ("javascript:goMenuDown('이천캠퍼스)주간메뉴( 10.07-10.13 ).xlsx','20241007~20241013_IC_주간메뉴.xlsx');")
+
 # 결과를 기다립니다
 time.sleep (5)
+
 # 결과를 가져옵니다
 result = driver.find_element ( By.XPATH , "//div[@id='result']")
+
 # 결과를 출력합니다
 print( result.text )
+
 # 웹 드라이버를 종료합니다
 driver.quit ()
