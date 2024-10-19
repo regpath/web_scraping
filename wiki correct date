@@ -33,4 +33,3 @@ output_str = remove_date_wikilinks(input_str)
 print(output_str)
 
 
-
