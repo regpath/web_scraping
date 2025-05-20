@@ -1,5 +1,5 @@
 # web_scraping
-This is my first GitHub contribution which scrapes Amazon product reviews using Python Selenium library.
+This is my first GitHub contribution, which scrapes Amazon product reviews using the Python Selenium library.
 Please open an issue if you have any problem.
 
 **Feel free to follow, star, or fork my repositories.**
@@ -14,4 +14,5 @@ Please open an issue if you have any problem.
 20250516
 20250517
 20250518
-202505193
+20250519
+20250520
